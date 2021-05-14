@@ -1,4 +1,4 @@
-package com.example.demo.interfaces;
+package com.example.demo.repository;
 
 import com.example.demo.entities.Student;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;

@@ -1,15 +1,17 @@
 package com.example.demo.entities;
-
+import com.example.demo.objects.Score;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
+
 
 @Document(collection = "students")
 public class Student {
 
     private String id;
     private String name;
-    private List<Integer> scores;
+    private List<Score> scores;
+
 
     public String getId() {
         return id;
@@ -27,11 +29,11 @@ public class Student {
         this.name = name;
     }
 
-    public List<Integer> getScores() {
+    public List<Score> getScores() {
         return scores;
     }
 
-    public void setScores(List<Integer> scores) {
+    public void setScores(List<Score> scores) {
         this.scores = scores;
     }
 }
